@@ -18,6 +18,9 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+#include "c.h"
+#include "signames.c" // Wow dirty hacks
+
 #include <errno.h>
 #include <getopt.h>
 #include <sched.h>
@@ -32,6 +35,7 @@
 #include <grp.h>
 
 /* we only need some defines missing in sys/mount.h, no libmount linkage */
+/*
 #include <libmount.h>
 
 #include "nls.h"
@@ -44,6 +48,7 @@
 #include "all-io.h"
 #include "signames.h"
 #include "strutils.h"
+*/
 
 /* synchronize parent and child by pipe */
 #define PIPE_SYNC_BYTE	0x06
